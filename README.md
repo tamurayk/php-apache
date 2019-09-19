@@ -8,13 +8,13 @@
 
 ```
 $ cd 7.3
-$ docker build -t kaz29/php-apache:7.3.8 .
-$ docker tag kaz29/php-apache:7.3.8 kaz29/php-apache:7.3
-$ docker push kaz29/php-apache:7.3.8
-$ docker push kaz29/php-apache:7.3
+$ docker build -t tamurayk/php-apache:7.3.8 .
+$ docker tag tamurayk/php-apache:7.3.8 tamurayk/php-apache:7.3
+$ docker push tamurayk/php-apache:7.3.8
+$ docker push tamurayk/php-apache:7.3
 
 #
-$ docker build -f Dockerfile.mysql -t kaz29/php-apache:7.2-mysql .
+$ docker build -f Dockerfile.mysql -t tamurayk/php-apache:7.2-mysql .
 
 ```
 
@@ -25,23 +25,21 @@ $ docker build -f Dockerfile.mysql -t kaz29/php-apache:7.2-mysql .
 
 ```
 $ cd 7.2
-$ docker build -t kaz29/php-apache:7.2.21 .
-$ docker tag kaz29/php-apache:7.2.21 kaz29/php-apache:7.2
-$ docker tag kaz29/php-apache:7.2.21 kaz29/php-apache:latest
-$ docker push kaz29/php-apache:7.2.21
-$ docker push kaz29/php-apache:7.2
-$ docker push kaz29/php-apache:latest
+$ docker build -t tamurayk/php-apache:7.2.21 .
+$ docker tag tamurayk/php-apache:7.2.21 tamurayk/php-apache:7.2
+$ docker push tamurayk/php-apache:7.2.21
+$ docker push tamurayk/php-apache:7.2
 
-$ docker build -f Dockerfile.mysql -t kaz29/php-apache:7.2-mysql .
+$ docker build -f Dockerfile.mysql -t tamurayk/php-apache:7.2-mysql .
 
 ```
 
 ### run 
 
 ```
-$ docker run -it --rm -d --name php-apache kaz29/php-apache:7.2
+$ docker run -it --rm -d --name php-apache tamurayk/php-apache:7.2
 
-$ docker run -it --rm -d --name php-apache kaz29/php-apache:7.2-mysql
+$ docker run -it --rm -d --name php-apache tamurayk/php-apache:7.2-mysql
 ```
 
 ## 5.4
@@ -50,22 +48,22 @@ $ docker run -it --rm -d --name php-apache kaz29/php-apache:7.2-mysql
 
 ```
 $ cd 5.4
-$ docker build -t kaz29/php-apache:5.4.42 .
-$ docker tag kaz29/php-apache:5.4.42 kaz29/php-apache:5.4
-$ docker push kaz29/php-apache:5.4.42
-$ docker push kaz29/php-apache:5.4
+$ docker build -t tamurayk/php-apache:5.4.42 .
+$ docker tag tamurayk/php-apache:5.4.42 tamurayk/php-apache:5.4
+$ docker push tamurayk/php-apache:5.4.42
+$ docker push tamurayk/php-apache:5.4
 ```
 
 ### run 
 
 ```
-$ docker run -it --rm -d --name php-apache-5.4 kaz29/php-apache:5.4
+$ docker run -it --rm -d --name php-apache-5.4 tamurayk/php-apache:5.4
 ```
 
 ## batch
 
 ```
-docker build -t kaz29/php-batch:7.2.15 .
+docker build -t tamurayk/php-batch:7.2.15 .
 ```
 
 ## fpm/7.0
